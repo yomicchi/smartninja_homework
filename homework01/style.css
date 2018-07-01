@@ -1,0 +1,167 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+	background-image: url("images/bg.png");
+	background-repeat: repeat;
+}
+
+nav {
+    background-color: #f3e6ff;
+    height:50px;
+    width: auto;
+    text-align:right;
+}
+
+nav ul {
+    width:50px;
+    margin:0;
+    width: auto;
+    position: relative;
+
+}
+
+nav li {
+    display:inline;
+    line-height:3rem;
+    color: purple;
+    margin: 15px 5px 0 0;
+
+
+
+}
+
+h2, h3 {
+    color: purple;
+    font-family: 'Amatic SC', cursive;
+    margin: 0 10px 10px 10px;
+
+}
+
+h2 {
+    font-size: 3em;
+    margin: 80px 10px 10px 10px;
+    }
+
+h3 {
+    font-size: 2em;
+
+    }
+
+#search {
+    width: 250px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+#search:hover {
+    width: 500px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.cat {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+}
+
+.cat strong {
+    text-decoration: underline;
+    font-size: 1.3em;
+    font-family: 'Amatic SC', cursive;
+    color: purple;
+}
+
+.logo {
+    height: 50%;
+    float: left;
+    margin: 10px 0 10px 10px;
+
+
+}
+
+.profil {
+    height: 20px;
+    float: right;
+    margin: 15px 5px 0 0;
+}
+
+img:not(.nope) {
+  border: 2px #f3e6ff dashed;
+  padding: 5px;
+  border-radius: 120px;
+  margin: 20px;
+}
+
+
+img:hover:not(.nope) {
+  border: 2px #a94dff solid;
+}
+
+
+#content: {
+    width: 940px;
+    margin: auto;
+}
+
+header {
+    margin bottom: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
+
+button {
+    margin: 20px 0 50px 10px;
+}
+
+.gatse {
+    margin: 20px;
+    border: 2px #f3e6ff dashed;
+    padding: 5px;
+    border-radius: 30px;
+    height: 200px;
+
+}
