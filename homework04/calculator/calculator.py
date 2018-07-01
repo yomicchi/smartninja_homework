@@ -1,22 +1,29 @@
 # coding=utf-8
 
+print "╔════════════════════════════════════════════════╗"
+print "║ Willkommen beim Taschenrechner 2000!    ║"
+print "║       ∧＿∧                              ║"
+print "║    ／(๑•ω•๑) ／＼                        ║"
+print "║   ／|￣∪ ∪ ￣|＼／                       ║"
+print "║    |＿＿ ＿＿ |／                         ║"
+print "╚════════════════════════════════════════════════╝"
 
-x = int(raw_input("Gib einen Wert für x ein: "))
-print x
+num1 = float(raw_input("Gib den ersten Wert ein: "))
+print num1
 
-y = int(raw_input("Gib einen Wert für y ein "))
-print y
+num2 = float(raw_input("Gib einen zweiten Wert ein "))
+print num2
 
 operation = raw_input("Wähle eine Rechenart aus (+, -, *, /:) ")
 print operation
 
 if operation == "+":
-    print "Das Ergebnis beträgt " + str(int(x) + int(y)) + "."
+    print "Das Ergebnis beträgt " + str(num1 + num2) + "."
 elif operation == "-":
-    print "Das Ergebnis beträgt " + str(int(x) - int(y)) + "."
+    print "Das Ergebnis beträgt " + str(num1 - num2) + "."
 elif operation == "*":
-    print "Das Ergebnis beträgt " + str(int(x) * int(y)) + "."
+    print "Das Ergebnis beträgt " + str(num1 * num2) + "."
 elif operation == "/":
-    print "Das Ergebnis beträgt " + str(int(x) / int(y)) + "."
+    print "Das Ergebnis beträgt " + str(num1 / num2) + "."
 else:
     print "Du hast keine gültige Rechenart ausgewählt!"
