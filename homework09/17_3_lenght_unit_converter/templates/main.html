@@ -1,0 +1,25 @@
+{% extends "frame.html" %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+<h1>Online-Umrechner</h1>
+
+<p>Hier kannst du Kilometer in Meilen umrechnen und vice versa :)</p>
+
+<form method="post">
+    <input type="text" name="zahl"><br>
+    <select id="einheit" name="einheit">
+        <option value="Kilometer">km</option>
+        <option value="Meilen">miles</option>
+    </select><br>
+    <button class="button" style="vertical-align:middle"><span>Ergebnis! </span></button>
+</form>
+
+{% if first_num and first_unit and second_unit and second_num is not none %}
+        <h4>{{ first_num }} {{ first_unit }} ergeben {{ second_num }} {{ second_unit }}</h4>
+{% endif %}
+
+{% endblock content %}

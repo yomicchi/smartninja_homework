@@ -1,0 +1,18 @@
+{% extends "frame.html" %}
+
+{% block title %}
+Städte Quiz
+{% endblock title %}
+
+{% block content %}
+{% if result %}
+    <h2>Richtig geraten!</h2>
+    <p>Die Hauptstadt von {{ item.land }} ist tatsächlich {{ item.stadt }}!</p>
+{% else %}
+    <h2>Leider ist deine Antwort falsch. </h2>
+    <p>Die Hauptstadt von  {{ item.land }} ist <strong>{{ item.stadt }}</strong>!</p>
+{% endif %}
+
+    <a href="/"><button class="button" style="vertical-align:middle"><span>Nochmal! </span></button></a>
+
+{% endblock content %}

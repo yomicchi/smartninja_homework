@@ -1,0 +1,33 @@
+{% extends "frame.html" %}
+
+{% block title %}
+    Kontakt
+{% endblock title %}
+
+{% block content %}
+     <h3> Hinterlass mir doch eine Nachricht! </h3>
+<br>
+ <div class="cont_form">
+  <form method="post" action="/thankyou">
+
+    <label for="fname">Vorname</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="Vorname"><br>
+
+    <label for="lname">Nachname</label><br>
+    <input type="text" id="lname" name="lastname" placeholder="Nachname"><br>
+
+    <label for="country">Land</label><br>
+    <select id="country" name="country">
+      <option value="austria">Österreich</option>
+      <option value="swiss">Schweiz</option>
+      <option value="germany">Deutschland</option>
+    </select><br>
+
+    <label for="subject">Subject</label><br>
+    <textarea id="subject" name="subject" placeholder="Hier kommt deine Nachricht rein :)" style="height:200px"></textarea><br>
+
+    <input type="submit" value="Submit"><br>
+
+  </form>
+</div>
+{% endblock content %}

@@ -1,0 +1,20 @@
+{% extends "frame.html" %}
+
+{% block title %}
+Lottozahlen
+{% endblock title %}
+
+{% block content %}
+<h1>Hier die zufällig generierten Lottozahlen!</h1>
+
+<p>{{ zahlen }}</p>
+
+<hr>
+
+<p>Übersichtlicher formatiert:</p>
+<ul style="list-style-type:circle">
+    {% for zahl in zahlen %}
+    <li>{{ zahl }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}

@@ -1,0 +1,16 @@
+{% extends "frame.html" %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+<h1>Willkommen beim Secret Number Spiel!</h1>
+<p>Wie der Titel schon sagt, muss man hier eine Zahl erraten ...</p>
+<p>Also, welche Zahl zwischen 0 und 100 wird gesucht?</p>
+
+<form method="post">
+    <input type="text" name="guess"><br>
+    <button class="button" style="vertical-align:middle"><span>Uuuund?</span></button>
+</form>
+{% endblock content %}

@@ -1,0 +1,89 @@
+body {
+    background-image: url("/assets/img/bg.png");
+    background-repeat: repeat;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+    padding-top: 70px;
+
+
+}
+
+p {     margin:8px 9px 10px 9px;
+        line-height:1.5em;
+}
+h1, h2, h3 {
+        font-family: 'Permanent Marker', cursive;
+}
+h1 {    font-size:2.2rem;
+        line-height: 2.6em;
+        font-weight: bold;
+        color:#1F1F1F;
+        padding-top:0.7rem;
+
+		text-shadow: rgba(255, 255, 255, 0.2) 3px 2px 3px;
+        }
+h2 {    font-size:1.9rem;
+        line-height: 2.3em;
+        font-weight: bold;
+        color:#1F1F1F;
+        padding-top:0.5rem;
+        }
+h3 {    font-size:1.6rem;
+        line-height: 1.9em;
+        font-weight: bold;
+        color:#1F1F1F;
+        padding-top:0.4rem;
+        }
+
+.me {
+    border: 2px #f3e6ff dashed;
+    padding: 5px;
+    border-radius: 120px;
+    margin: 20px;
+}
+
+.name, label {
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.gatse {
+    border: 2px #f3e6ff dashed;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 20px;
+    height: 150px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.cont_form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}

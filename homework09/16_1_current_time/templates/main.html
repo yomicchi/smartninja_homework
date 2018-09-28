@@ -1,0 +1,12 @@
+{% extends "frame.html" %}
+
+{% block title %}
+Current Time
+{% endblock title %}
+
+{% block content %}
+<h1>Willkommen!</h1>
+<p>Aktuell ist es: {{ time_now }}</p>
+<hr>
+<p>Besser formatiert: {{ time_now.strftime('%A, %d. %B %Y, %H:%M:%S') }}</p>
+{% endblock content %}

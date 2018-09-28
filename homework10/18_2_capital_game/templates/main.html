@@ -1,0 +1,20 @@
+{% extends "frame.html" %}
+
+{% block title %}
+Städte Quiz
+{% endblock title %}
+
+{% block content %}
+<img src="{{ capital.img }}" width="500px">
+
+<h3>Wie heißt die Hauptstadt von {{ capital.land }}?</h3>
+
+<form action="/answer" method="post">
+    <p>
+        <strong>Antwort: </strong>
+        <input type="text" name="answer">
+        <input type="hidden" value="{{ capital.land }}" name="country">
+        <button class="button" style="vertical-align:middle"><span>Ergebnis! </span></button>
+    </p>
+</form>
+{% endblock content %}
