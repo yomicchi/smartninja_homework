@@ -1,0 +1,20 @@
+{% extends "frame.html" %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+<div class="cont_form">
+    <form action="/message/{{ message.key.id() }}/edit" method="post">
+        <label>First and last name:</label><br>
+        <input type="text" name="edit_name" value="{{ message.name }}" placeholder="{{ message.author_name }}"><br>
+
+        <label>Message:</label><br>
+        <input type="text" name="edit_mess" value="{{ message.message_text }}" placeholder="{{ message.message }}" required>
+        <br>
+        <button type="submit">Edit Message</button>
+    </form>
+</div>
+
+{% endblock content %}

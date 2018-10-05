@@ -1,0 +1,27 @@
+{% extends "frame.html" %}
+
+{% block title %}
+Guestbook: Admin View
+{% endblock title %}
+
+{% block content %}
+<h1>Do you want to restore this message?</h1>
+
+<form method="post">
+    <p><strong>Restore the Guestbook message</strong></p>
+
+    <p><strong>Name:</strong> {{ message.author_name }}</p>
+
+    <p><strong>Email:</strong> {{ message.email }}</p>
+
+    <p><strong>Message: </strong>{{ message.message }}</p>
+
+    <button type="submit">Yes, restore this message</button>
+</form>
+
+<br>
+
+<a href="/guestbook"><button class="button" style="vertical-align:middle"><span>No </span></button></a>
+
+
+{% endblock content %}

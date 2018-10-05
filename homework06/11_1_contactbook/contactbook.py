@@ -90,14 +90,14 @@ def edit_contact(contacts):
 
         elif selection.lower() == "d":
             new_phone = raw_input("Geben Sie eine neue Telefonnummer für %s an:  " % selected_contact.get_full_name())
-            selected_contact.phone_number = new_phone
+            selected_contact.telefon = new_phone
 
             print ""
             print "Telefonnummer wurde erfolgreich geändert."
 
         elif selection.lower() == "e":
             new_dob = raw_input("Geben Sie ein neues Geburtsjahr für %s an: " % selected_contact.get_full_name())
-            selected_contact.birth_year = new_dob
+            selected_contact.geburtsjahr = new_dob
 
             print ""
             print "Geburtsdatum wurde erfolgreich geändert."

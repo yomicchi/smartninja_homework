@@ -3,18 +3,7 @@ import random
 
 
 def rand_num(anzahl):
-    zahlenliste = []
-
-    while True:
-        if len(zahlenliste) == anzahl:
-            break
-
-        zahl = random.randint(1, 46) # zahl = random.sample(1, 46) würde auch gehen
-
-        if zahl not in zahlenliste:
-            zahlenliste.append(zahl)
-
-    return zahlenliste
+    return sorted(random.sample(range(1,47), anzahl))
 
 
 def main():
@@ -30,4 +19,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

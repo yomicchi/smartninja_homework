@@ -1,0 +1,48 @@
+{% extends "frame.html" %}
+
+{% block title %}
+Guestbook
+{% endblock title %}
+
+{% block content %}
+<h1>Filton Hotel - Guestbook</h1>
+
+<p>Welcome to the Filton Hotel!</p>
+<p>Please leave an entry in our guest book!</p>
+<br>
+
+
+<div class="cont_form">
+    <form method="post"  >
+
+        <label for="name">First and last name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Name"><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Email"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" placeholder="Please enter your message here" style="height:200px" required></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</div>
+
+    <hr>
+
+    <h3>Messages from our Customers:</h3>
+
+    {% for message in messages %}
+    <p>
+        <strong><a href="mailto:{{message.email}}">{{ message.author_name }}</a></strong> at {{
+        message.created.strftime('%d %B %Y at %H:%M') }}:
+        <br>
+        <em>{{ message.message }}</em>
+    </p>
+    <br>
+    {% else %}
+    <p>No messages yet.</p>
+    {% endfor %}
+
+    {% endblock content %}

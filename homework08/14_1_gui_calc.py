@@ -13,7 +13,7 @@ class Calc:
         self.getAndReplace()
         try:
             self.value = eval(self.newtext)  # evaluate the expression using the eval function
-        except SyntaxError or NameError:
+        except (SyntaxError, NameError, ZeroDivisionError):
             self.e.delete(0, END)
             self.e.insert(0, 'Invalid Input!')
         else:

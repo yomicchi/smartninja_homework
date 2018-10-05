@@ -1,0 +1,22 @@
+{% extends "frame.html" %}
+
+{% block title %}
+Delete Message
+{% endblock title %}
+
+{% block content %}
+<h1>Do you really want to delete this message?</h1>
+
+<p><em>"{{ message.message_text }}"</em></p>
+<br>
+
+<form action="/message/{{ message.key.id() }}/delete" method="post">
+    <button type="submit">YES, delete!</button>
+</form>
+
+<br>
+
+<a href="/guestbook"><button class="button" style="vertical-align:middle"><span>No </span></button></a>
+
+
+{% endblock content %}

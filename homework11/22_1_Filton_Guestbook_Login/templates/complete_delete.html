@@ -1,0 +1,26 @@
+{% extends "frame.html" %}
+
+{% block title %}
+Guestbook: Admin View
+{% endblock title %}
+
+{% block content %}
+<h1>Do you really want to permanently delete this message?</h1>
+
+<form method="post">
+    <p><strong>Permanently delete the Guestbook message</strong></p>
+
+    <p><strong>Name:</strong> {{ message.author_name }}</p>
+
+    <p><strong>Email:</strong> {{ message.email }}</p>
+
+    <p><strong>Message: </strong>{{ message.message }}</p>
+
+    <button type="submit">YES, permanently delete this message!</button>
+</form>
+
+<br>
+
+<a href="/guestbook"><button class="button" style="vertical-align:middle"><span>No </span></button></a>
+
+{% endblock content %}

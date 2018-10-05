@@ -8,14 +8,14 @@ Home
 <h1>Online-Rechner</h1>
 
 <form method="post">
-    <input type="text" name="zahl1"><br>
+    <input type="number" name="zahl1" required><br>
     <select id="operation" name="operation">
         <option value="+">+</option>
         <option value="-">-</option>
         <option value="*">*</option>
         <option value="/">/</option>
     </select><br>
-    <input type="text" name="zahl2"><br>
+    <input type="number" name="zahl2" required><br>
     <button class="button" style="vertical-align:middle"><span>Ergebnis! </span></button>
 </form>
 {% if result is not none %}

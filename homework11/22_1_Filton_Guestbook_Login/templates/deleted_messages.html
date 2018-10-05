@@ -1,0 +1,43 @@
+{% extends "frame.html" %}
+
+{% block title %}
+Guestbook: Admin View
+{% endblock title %}
+
+{% block content %}
+{% if logged_in %}
+<h3>Deleted Messages</h3>
+
+    {% for message in messages %}
+    <p>
+        <strong><a href="mailto:{{message.email}}">{{ message.author_name }}</a></strong> at {{
+        message.created.strftime('%d %B %Y at %H:%M') }}:
+        <br>
+        <em>{{ message.message_text }}</em>
+        <br>
+        <a href="/message/{{ message.key.id() }}/restore">Restore Message</a>
+        <br>
+        <a href="/message/{{ message.key.id() }}/complete-delete">Delete Message</a>
+    </p>
+    <br>
+    {% else %}
+    <p>No messages yet.</p>
+    {% endfor %}
+
+<a href="/guestbook"><button class="button" style="vertical-align:middle"><span>Back</span></button></a>
+<br>
+<a href="{{ logging_url }}"<button class="button" style="vertical-align:middle"><span>Logout</span></button></a>
+
+
+
+        {% else %}
+
+
+            <h1>Hello there!</h1>
+
+            <p>Please login here: <a href="{{ logging_url }}">Login</a></p>
+
+
+        {% endif %}
+
+{% endblock content %}

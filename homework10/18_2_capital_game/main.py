@@ -59,7 +59,7 @@ class ResultHandler(BaseHandler):
         capitals = capital_list()
         for item in capitals:
             if item.land == country:
-                if item.stadt.lower() == answer.lower():
+                if item.stadt.strip().lower() == answer.strip().lower():
                     result = True
                 else:
                     result = False
